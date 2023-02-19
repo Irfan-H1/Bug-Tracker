@@ -1,1 +1,11 @@
 
+Bug Tracker Application
+
+This solution consists of 2 project, which are a web API and also a WPF project. The Web API utilises Entity framework to talk to a SQL database and there is a SQL script on GITHub to create the tables required. The web config will need to be amended to point to the correct DB.
+
+The WPF app talks to the DB via the API so the app pool will need appropriate permissions setting up to be able to talk to the database.
+
+
+
+
+
