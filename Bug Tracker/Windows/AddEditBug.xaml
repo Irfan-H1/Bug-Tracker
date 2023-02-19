@@ -1,0 +1,27 @@
+﻿<Window x:Class="Bug_Tracker.Windows.AddEditBug"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bug_Tracker.Windows"
+        mc:Ignorable="d"
+        Height="540" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Background="#FF9AC7FF" Margin="0,0,0,0">
+        <Image x:Name="imgLogo" Source="../Images/AireLogic.jpg" HorizontalAlignment="Left" Height="41" Margin="659,10,0,0" VerticalAlignment="Top" Width="140" />
+        <Label x:Name="lblTitle" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="199,55,0,0" VerticalAlignment="Top" Width="368" Height="38" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="lblBugID" Content="Bug ID:" HorizontalAlignment="Left" Margin="68,120,0,0" VerticalAlignment="Top" Width="59" FontSize="14" />
+        <TextBox x:Name="txtBugID" TextWrapping="Wrap" Margin="156,121,566,0" Height="22" VerticalAlignment="Top" IsEnabled="False" FontSize="14" Background="LightGray"/>
+        <Label x:Name="lblBugTitle" Content="Bug Title:" Margin="68,184,657,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtBugTitle" HorizontalAlignment="Left" Margin="156,185,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="217" Height="45" FontSize="14"/>
+        <Label x:Name="lblBugDescription" Content="Bug&#10;Description:" HorizontalAlignment="Left" Margin="68,263,0,0" VerticalAlignment="Top" Height="52" Width="84" FontSize="14"/>
+        <TextBox x:Name="txtBugDescription" HorizontalAlignment="Left" Margin="156,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Height="97" FontSize="14"/>
+        <Label x:Name="lblBugOpened" Content="Bug Opened:" HorizontalAlignment="Left" Margin="395,120,0,0" VerticalAlignment="Top" Width="91" FontSize="14"/>
+        <TextBox x:Name="txtBugOpened" HorizontalAlignment="Left" Margin="509,121,0,0" TextWrapping="Wrap" Width="236" IsEnabled="False" Height="22" VerticalAlignment="Top" FontSize="14" Background="LightGray"/>
+        <Label x:Name="lblBugAssigned" Content="Bug Assigned:" Margin="395,184,304,0" VerticalAlignment="Top" Width="101" FontSize="14"/>
+        <ComboBox x:Name="cmbBugAssigned" Margin="509,185,55,333" Height="22" FontSize="14"/>
+        <Button x:Name="btnMenu" Content="Menu" Margin="0,0,10,14" Click="btnMenu_Click"  FontSize="18" Height="70" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="130"/>
+        <Button x:Name="btnSave" Content="Save" Margin="0,0,598,14" Click="btnSave_Click"  FontSize="18" Height="70" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="130"/>
+        <Label x:Name="lblMessage" Content="" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="72,404,0,0" VerticalAlignment="Top" Width="673"/>
+        <Button x:Name="btnClose" Content="Close Bug" Margin="0,0,444,14" Click="btnClose_Click"  FontSize="18" Height="70" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="130" IsEnabled="False"/>
+    </Grid>
+</Window>
